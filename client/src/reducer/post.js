@@ -9,7 +9,7 @@ const initialState = {
 
 export default function (state = initialState, action) {
     const { type, payload } = action;
-    console.log(type, payload);
+
     switch (type) {
         case GET_POST:
             return {
@@ -57,7 +57,7 @@ export default function (state = initialState, action) {
             }
 
         case ADD_COMMENT:
-            console.log(payload);
+
             return {
                 ...state,
                 post: { ...state.post, comments: payload },
