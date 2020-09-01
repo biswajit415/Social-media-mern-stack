@@ -1,0 +1,5 @@
+{
+    "mongoURI":"mongodb+srv://biswajit:7687029258@cluster0-knwzx.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"mysectrettoken"
+
+}
