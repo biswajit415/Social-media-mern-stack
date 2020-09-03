@@ -10,7 +10,7 @@ const Education = ({ education, deleteEducation }) => {
     const educations = education.map(edu => (
         <tr key={edu._id}>
             <td>{edu.school}</td>
-            <td>{edu.degree}</td>
+            <td className='hide-sm'>{edu.degree}</td>
             <td>
                 <Moment format="YYYY/MM/DD">{moment.utc(edu.from)}</Moment> -{' '}
                 {edu.to === null ? (
@@ -37,9 +37,9 @@ const Education = ({ education, deleteEducation }) => {
 
                 <tr>
                     <th>School</th>
-                    <th>Degree</th>
-                    <th>Years</th>
-                    <th>Actions</th>
+                    <th className='hide-sm'>Degree</th>
+                    <th className='hide-sm'>Years</th>
+                    <th>Action</th>
                 </tr>
 
                 <tbody>{educations}</tbody>
